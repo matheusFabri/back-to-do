@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace AtletaBackend.Models;
 public class User
 {
@@ -6,5 +8,6 @@ public class User
     public int Idade { get; set; } = 0;
     public string CPF { get; set; } = "";
 
-    public IList<Tarefa> Records { get; set; } = new List<Tarefa>();
+    [InverseProperty("User")]
+    public IList<Tarefa> Records { get; } = new List<Tarefa>();
 }

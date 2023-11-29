@@ -39,16 +39,26 @@ public class TarefaController : ControllerBase
         return objetos.ToArray();
     }
     // POST: api/Tarefa
-    [HttpPost("user/{id}")]
-    public ActionResult<Tarefa> Post(Tarefa obj, string id)
+    [HttpPost]
+    public ActionResult<Tarefa> Post(Tarefa obj)
     {
+        var user = db.Users.First(x => x.Id == obj.UserId);
+
         if (string.IsNullOrWhiteSpace(obj.Id))
             obj.Id = Guid.NewGuid().ToString();
 
-        var user = db.Users.FirstOrDefault(x => x.Id == id);
+        Tarefa nova = new Tarefa
+        {
+            Id = obj.Id,
+            User = user,
+            Time = obj.Time,
+            Nome = obj.Nome,
+            Done = obj.Done,
+            UserId = user.Id
+        };
 
-        db.Tarefas.Add(obj);
-        user.Records.Add(obj);
+        db.Tarefas.Add(nova);
+        // user.Records.Add(nova);
         db.SaveChanges();
 
 

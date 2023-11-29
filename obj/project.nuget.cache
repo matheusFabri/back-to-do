@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "98mzqVLWfdnn5lVy04xZ/sbPCCGh8aXbEKPZVtyoran/LIM2O/UHXCK206wWoJDIvuwuPxNmqt4fTkDLIxr79w==",
+  "dgSpecHash": "gUT0dt2GuF/RoJL8l/SjErloQsIZHlk92LLjBJ2SY0wODnVFOgp/t+6Rr8IlvfsjUiREL3BwOiZPsmu+qHed3Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\canel\\Documentos\\Faculdade_4Periodo\\Mobile\\back-to-do\\Back-end-TodoList\\AtletaBackend.csproj",
+  "projectFilePath": "C:\\Users\\canel\\Documentos\\Faculdade_4Periodo\\Mobile\\Back-end-TodoList\\AtletaBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\canel\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\canel\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.13\\microsoft.aspnetcore.authentication.jwtbearer.7.0.13.nupkg.sha512",

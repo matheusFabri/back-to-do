@@ -3,6 +3,7 @@ using AtletaBackend.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace UserBackend.Controllers;
 
@@ -35,6 +36,19 @@ public class UserController : ControllerBase
 
         return obj;
     }
+
+    [HttpGet]
+    [Route("tarefas/{id}")]
+    public ActionResult<IList<Tarefa>> GetTarefasByUserId(string id)
+    {
+
+        var tarefas = db.Tarefas.Where(p => p.UserId == id).ToList();
+
+        // tarefas.ToList().ForEach(p => p.User.Records.Clear());
+
+        return tarefas;
+    }
+
 
     [HttpGet]
     [Route("/api/user/autenticado")]

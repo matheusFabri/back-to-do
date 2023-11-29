@@ -2336,11 +2336,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\canel\\Documentos\\Faculdade_4Periodo\\Mobile\\back-to-do\\Back-end-TodoList\\AtletaBackend.csproj",
+      "projectUniqueName": "C:\\Users\\canel\\Documentos\\Faculdade_4Periodo\\Mobile\\Back-end-TodoList\\AtletaBackend.csproj",
       "projectName": "AtletaBackend",
-      "projectPath": "C:\\Users\\canel\\Documentos\\Faculdade_4Periodo\\Mobile\\back-to-do\\Back-end-TodoList\\AtletaBackend.csproj",
+      "projectPath": "C:\\Users\\canel\\Documentos\\Faculdade_4Periodo\\Mobile\\Back-end-TodoList\\AtletaBackend.csproj",
       "packagesPath": "C:\\Users\\canel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\canel\\Documentos\\Faculdade_4Periodo\\Mobile\\back-to-do\\Back-end-TodoList\\obj\\",
+      "outputPath": "C:\\Users\\canel\\Documentos\\Faculdade_4Periodo\\Mobile\\Back-end-TodoList\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
